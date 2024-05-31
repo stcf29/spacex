@@ -5,6 +5,7 @@ import AddressForm from './components/AddressForm';
 import EditAddress from './components/EditAddress';
 import Header from './components/Header/index';
 
+
 const App = () => {
   const [addresses, setAddresses] = useState([]);
   const [currentAddress, setCurrentAddress] = useState(null);
@@ -23,18 +24,18 @@ const App = () => {
   return (
     <Router>
       <div className='header'>
-        <Header>
-          <p>teste </p>
+        <Header className='header'>
+          <p></p>
         </Header>
       </div>
       <div className='menu'>
         <nav>
           <ul>
             <li>
-              <Link to="/">Cadastrar Endereço</Link>
+              <Link className='links' to="/">Cadastrar Endereço</Link>
             </li>
             <li>
-              <Link to="/edit">Editar Endereço</Link>
+              <Link className='links' to="/edit">Editar Endereço</Link>
             </li>
           </ul>
         </nav>
@@ -45,7 +46,7 @@ const App = () => {
               {addresses.map((address, index) => (
                 <li key={index}>
                   {address.planet} - {address.code}
-                  <button onClick={() => setCurrentAddress(address)}>
+                  <button  to="/edit" className='botaoedit' type='submit' onClick={() => setCurrentAddress(address)}>
                     Editar
                   </button>
                 </li>
@@ -59,7 +60,7 @@ const App = () => {
                 onSubmit={handleEditAddress}
               />
             ) : (
-              <p>Selecione um endereço para editar.</p>
+              <p>Não existe um endereço cadastrado, favor selecionar o endereço na página de cadastro e tente novamente.</p>
             )}
           </Route>
         </Switch>

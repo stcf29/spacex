@@ -5,9 +5,98 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #efefef;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.menu{
+  padding-left: 50px;
+}
+
+.header{
+  align-self: center;
+  background-color: rgb(5, 156, 226);
+  padding: 5px;
+  text-align: center;
+
+}
+
+.letra-header{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+
+.sub-title{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  color: white;
+}
+
+.links{
+  font-size: 15px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: black;
+}
+
+.input{
+  right: 2px;
+  margin-right: 50px;
+  margin-top: 10px;
+  margin: 10px;
+  
+}
+
+.label{
+  font-size: 15px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: black;
+}
+
+.field1{
+  margin-right: 10px;
+  border-style: inset;
+  border-style: 5px;
+  padding-left: 0px;
+  right: 2px;
+  margin-right: 50px;
+  margin-top: 10px;
+  margin: 10px;
+  border: 1px solid #caced1;
+}
+
+.field2{
+  margin-right: 10px;
+  border-style: inset;
+  border-style: 5px;
+  right: 2px;
+  margin-right: 50px;
+  margin-top: 10px;
+  margin: 10px;
+ 
+}
+
+.botao{
+  background-color: rgb(104, 194, 236);
+  text-align: center;
+  margin-top: 10px;
+  size: 50px;
+  border-style: solid;
+  border-radius: 5px;
+  border: 1px solid transparent;
+}
+
+.botaoedit{
+  right: 2px;
+  margin-right: 50px;
+  margin-top: 10px;
+  margin: 10px;
+  background-color: rgb(104, 194, 236);
+  border-style: solid;
+  border-radius: 5px;
+  border: 1px solid transparent;
 }
